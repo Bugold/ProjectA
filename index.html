@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="icon" type="image/png" href="image/favicon.ico">
-		<title>To miss Hoai An</title>	    
+		<title>Anh <3 Em</title>	    
         <link type="text/css" rel="stylesheet" href="./renxi/default.css">
 		<script type="text/javascript" src="./renxi/jquery.min.js"></script>
 		<script type="text/javascript" src="./renxi/jscex.min.js"></script>
@@ -19,9 +19,20 @@
         </style>
 </head>
     <body>
-			<audio autoplay="autopaly">
-					<source src="music/Mint_candy.mp3" type="audio/mp3" />
-			</audio>  
+
+			<button id="playMusic">Mot chut gio, nang cung mot li den da ko duong (hit me)</button>
+				<audio id="audioPlayer">
+    				<source src="music/Mint_candy.mp3" type="audio/mp3" />
+    			Trình duyệt của bạn không hỗ trợ phát âm thanh.
+			</audio>
+
+			<script>
+    				document.getElementById('playMusic').addEventListener('click', function() {
+        				const audio = document.getElementById('audioPlayer');
+        				audio.play(); // Phát nhạc
+    				});
+			</script>
+ 
         <div id="main">
             <div id="error">Trình duyệt của bạn không được hỗ trợ. Hoặc sử dụng (<a href="http://www.google.cn/chrome">Chrome</a>) và (<a href="http://firefox.com/download/">Firefox</a>)</div>
              <div id="wrap">
@@ -43,7 +54,9 @@
       </div>
                 </div>
                 <div id="clock-box">
-                    <span class="STYLE1"></span><font color="#FF0000">Happy teacher's day</font>
+                    <span class="STYLE1"></span><font color="#FF0000">Anh <3 Em</font>
+<span class="STYLE1"> Time of love...</span>
+                  <div id="clock"></div>
               </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
             </div>
